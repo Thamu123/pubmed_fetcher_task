@@ -1,6 +1,6 @@
 [project]
 name = "pubmed-fetcher-task"
-version = "0.1.1"
+version = "0.1.2"
 description = "Fetch PubMed papers with pharma/biotech affiliations"
 authors = [
     {name = "Thamu123",email = "vmanivmani95@gmail.com"}
