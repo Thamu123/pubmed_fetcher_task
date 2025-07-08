@@ -25,14 +25,14 @@ created core.py file, where defined,
     4.write_to_csv()    ---> Writing the data to CSV file using Pandas
 
 Then, Created cli.py, here defined the main function and 
-## added this command in pyproject.toml for executable command named get-papers-list
-    [tool.poetry.scripts]
-    get-papers-list = "pubmed_fetcher_task.cli:main"
-
     --- Defined the command for console
         -h, --help  --> Display usage instructions
         -d, --debug --> Print debug information during execution.
         -f, --file  --> Specify the filename to save the results.
+
+## added this command in pyproject.toml for executable command named get-papers-list
+    [tool.poetry.scripts]
+    get-papers-list = "pubmed_fetcher_task.cli:main"
 
 ### To Check the Output run the command
 poetry install
@@ -59,6 +59,12 @@ poetry add --dev pytest
 ### After run pytest
 poetry run pytest
 
+### need to create virtual Environment
+python -m venv testenv --- creating virutal environment 
+venv/bin/activate
+pip install --index-url https://test.pypi.org/simple/ pubmed_fetcher_thamu
+
+
 ### Finally git initialization and Git commit
 git init
 git remote add origin https://github.com/yourusername/pubmed_fetcher_task.git
@@ -75,6 +81,23 @@ https://test.pypi.org/project/pubmed-fetcher-task
 
 🤖 Used LLMs (ChatGPT, Copilot)
 https://chatgpt.com/share/686ca263-891c-800b-8cea-e53c05d30275
+
+
+
+##########################################################################
+## 🔧 How to Install and Test This Package from TestPyPI
+
+### Step 1: Create a virtual environment
+
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+Then, run this command
+pip install --extra-index-url https://pypi.org/simple/ --index-url https://test.pypi.org/simple/ pubmed_fetcher_thamu
+
+then, 
+get-papers-list "covid vaccine" --file results.csv --debug
+
 
 
 
