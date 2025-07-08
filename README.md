@@ -53,6 +53,28 @@ poetry add --dev twine
 ### Run the command for upload the repository to testpypi
 poetry run twine upload --repository testpypi dist/*
 
+### If need Pytest run below command it will install the dependency
+poetry add --dev pytest
+
+### After run pytest
+poetry run pytest
+
+### Finally git initialization and Git commit
+git init
+git remote add origin https://github.com/yourusername/pubmed_fetcher_task.git
+git add .
+git commit -m "Final version for task-home task"
+git push -u origin main
+
+
+🔗 Link to your GitHub repo
+https://github.com/Thamu123/pubmed_fetcher_task
+
+🔗 Link to TestPyPI package 
+https://test.pypi.org/project/pubmed-fetcher-task
+
+🤖 Used LLMs (ChatGPT, Copilot)
+
 
 
 
