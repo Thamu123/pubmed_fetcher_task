@@ -74,7 +74,7 @@ https://github.com/Thamu123/pubmed_fetcher_task
 https://test.pypi.org/project/pubmed-fetcher-task
 
 🤖 Used LLMs (ChatGPT, Copilot)
-
+https://chatgpt.com/share/686ca263-891c-800b-8cea-e53c05d30275
 
 
 
